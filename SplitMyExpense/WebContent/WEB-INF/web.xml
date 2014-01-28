@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SplitMyExpense</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+ 
+  <servlet>
+    <servlet-name>LogIn</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.LogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogIn</servlet-name>
+    <url-pattern>/session/LogIn</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LogOut</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogOut</servlet-name>
+    <url-pattern>/session/LogOut</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Registrazione</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.RegistrazioneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registrazione</servlet-name>
+    <url-pattern>/session/Registrazione</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreaGruppoSpesa</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.CreaGruppoSpesaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreaGruppoSpesa</servlet-name>
+    <url-pattern>/session/CreaGruppoSpesa</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ModificaProfilo</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.ModificaProfiloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModificaProfilo</servlet-name>
+    <url-pattern>/session/ModificaProfilo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreaListaSpesa</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.CreaListaSpesaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreaListaSpesa</servlet-name>
+    <url-pattern>/session/CreaListaSpesa</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AggiungiProdottoToLista</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.AggiungiProdottoToListaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AggiungiProdottoToLista</servlet-name>
+    <url-pattern>/session/AggiungiProdottoToLista</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AggiungiUtenteToGruppo</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.AggiungiUtenteToGruppoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AggiungiUtenteToGruppo</servlet-name>
+    <url-pattern>/session/AggiungiUtenteToGruppo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AbbandonaGruppo</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.AbbandonaGruppoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AbbandonaGruppo</servlet-name>
+    <url-pattern>/session/AbbandonaGruppo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TogglePartecipazioneProdottoLista</servlet-name>
+    <servlet-class>it.unical.ingsw.splitMyExpense.userInterface.webApplication.servlets.TogglePartecipazioneProdottoListaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TogglePartecipazioneProdottoLista</servlet-name>
+    <url-pattern>/session/TogglePartecipazioneProdottoLista</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+    <listener-class>it.unical.ingsw.splitMyExpense.technicalServices.dataAccess.ConnectionFactory</listener-class>
+  </listener>
+</web-app>

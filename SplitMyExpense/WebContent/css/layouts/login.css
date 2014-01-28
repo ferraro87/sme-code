@@ -1,0 +1,71 @@
+body {
+    color: #777;
+}
+
+
+#logoLogin{
+	
+	width: 100px;
+	margin-bottom:5%;
+}
+
+.login{
+	width:300px;
+	margin:0 auto;
+}
+
+
+.login form{
+	margin-top:20%;
+	padding:5%;
+	background:#dedede;
+	border-radius:2px;
+	box-shadow: 3px 3px 1px #888888;
+	margin-bottom: 10px;
+}
+
+.login input{
+	width: 100%;
+}
+
+#logInButton {
+	margin-top: 10px;
+}
+
+#formRegistrazione input, #formCreaGruppo input{
+	width: 100%;
+}
+
+.registrazione form{
+	width:300px;
+	margin:0 auto;
+	margin-top:2%;
+	padding:2%;
+	background:#dedede;
+	border-radius:2px;
+	box-shadow: 3px 3px 1px #888888;
+	margin-bottom: 10px;
+}
+
+#creaAccountButton{
+	text-decoration: none;
+	color:blue;
+	font-weight: bolder;
+	
+}
+#creaAccountButton:HOVER{
+	cursor: pointer;
+	
+}
+
+
+
+
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+@media (max-width: 767px) {
+
+    
+	
+}
